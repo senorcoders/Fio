@@ -12,5 +12,7 @@ $(document).ready(function() {
         jQuery('.top-header').css('display', 'block');
     	}
 	});
+  
+  
 
 });

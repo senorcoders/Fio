@@ -33,3 +33,67 @@ footer{
       
     }
 }
+
+
+.sub-footer-section{
+      background: $purple;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   .navbar-brand {
+        color: $white;
+        font-size: 30px;
+        font-weight: bold;
+        
+        img{
+            width: 180px;
+            
+            @include lg { 
+                width: 80px;
+            }
+        }
+    }
+  p{
+    color: $white;
+  }
+  
+  .footer-nav{
+    list-style: none;
+    li{
+      margin-bottom: 15px;
+    }
+    li:before{
+      content: "\f0da"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+      color: #637381;
+    }
+    a{
+      color: $white;
+    }
+    
+   
+  }
+   .social-footer{
+        width: auto;
+        text-align: right;
+        max-width: 350px;
+        float: right;
+        padding: 10px 20px;
+        color: $white;
+        margin-bottom: 0;
+       a{
+            background: transparent;
+            padding: 8px;
+            border-radius: 50%;
+            border: 1px solid $white;
+        }
+
+        i{
+            font-size: 20px;
+           color: $white;
+           vertical-align: text-top;
+        }
+    }
+}

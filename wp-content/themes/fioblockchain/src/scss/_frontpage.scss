@@ -32,6 +32,7 @@
         border-radius: 20px;
         box-shadow: 2px 2px 10px 2px #f1f1f1;
         margin-bottom: 80px;
+        background: $white;
 
         @include lg {
             padding: 20px;
@@ -94,6 +95,9 @@
         }                
     }
     .introduction-forms{
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px 2px #f1f1f1;
+        margin-bottom: 80px;
         background: $white;  
         form{
             margin-bottom: 20px;

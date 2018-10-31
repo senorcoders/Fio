@@ -125,7 +125,8 @@
   .home-hero .introduction-forms {
     border-radius: 20px;
     box-shadow: 2px 2px 10px 2px #f1f1f1;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    background: #fff; }
     @media (max-width: 992px) {
       .home-hero .introduction-forms {
         padding: 20px; } }
@@ -170,6 +171,9 @@
         .video-bg .introduction .introduction-big-title {
           font-size: 1.5rem; } }
   .video-bg .introduction-forms {
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #f1f1f1;
+    margin-bottom: 80px;
     background: #fff; }
     .video-bg .introduction-forms form {
       margin-bottom: 20px; }
@@ -330,6 +334,55 @@ footer {
         width: 100px;
         background: #347798;
         margin-bottom: 10px; }
+
+.sub-footer-section {
+  background: #535aa7;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .sub-footer-section .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold; }
+    .sub-footer-section .navbar-brand img {
+      width: 180px; }
+      @media (max-width: 992px) {
+        .sub-footer-section .navbar-brand img {
+          width: 80px; } }
+  .sub-footer-section p {
+    color: #fff; }
+  .sub-footer-section .footer-nav {
+    list-style: none; }
+    .sub-footer-section .footer-nav li {
+      margin-bottom: 15px; }
+    .sub-footer-section .footer-nav li:before {
+      content: "\f0da";
+      /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      display: inline-block;
+      margin-left: -1.3em;
+      /* same as padding-left set on li */
+      width: 1.3em;
+      /* same as padding-left set on li */
+      color: #637381; }
+    .sub-footer-section .footer-nav a {
+      color: #fff; }
+  .sub-footer-section .social-footer {
+    width: auto;
+    text-align: right;
+    max-width: 350px;
+    float: right;
+    padding: 10px 20px;
+    color: #fff;
+    margin-bottom: 0; }
+    .sub-footer-section .social-footer a {
+      background: transparent;
+      padding: 8px;
+      border-radius: 50%;
+      border: 1px solid #fff; }
+    .sub-footer-section .social-footer i {
+      font-size: 20px;
+      color: #fff;
+      vertical-align: text-top; }
 
 a:hover {
   text-decoration: none; }

@@ -44,8 +44,43 @@
           ?>
      
     </div>
+   
   </div>
+  
+
 </footer>
+<div class="sub-footer-section">
+  <div class="container">
+     <div class="row sub-footer">
+      <div class="col-lg-4">
+                <?php  $url = home_url(); ?>
+          <a class="navbar-brand" href="<?php echo $url; ?>">
+           <?php  $custom_logo_id = get_theme_mod( 'custom_logo' );
+                  $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                  if ( has_custom_logo() ) {
+                          echo '<img  alt="Logo" src="'. esc_url( $logo[0] ) .'">';
+                  } else {
+                          echo  get_bloginfo( 'name' );
+                  } ?>
+           </a>
+        <p><i class="fa fa-location-arrow" aria-hidden="true"></i> 123 Anycity, USA</p>
+      </div>
+       
+       <div class="col-lg-4">
+                      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=> false,  'menu_class' => 'footer-nav' ) ); ?>
+
+       </div>
+       
+       <div class="col-lg-4">
+         <ul class="social-footer list-inline text-center">
+  <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+  <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+  <li class="list-inline-item"><a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+</ul>
+       </div>
+    </div>
+  </div>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>
