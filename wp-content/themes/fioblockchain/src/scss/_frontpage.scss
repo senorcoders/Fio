@@ -1,0 +1,259 @@
+.home-hero{
+    background: url(/wp-content/uploads/2018/10/fio-bg-lg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 60px;    
+            
+    .filter{
+        z-index: -1;
+        position: absolute;
+        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        top: 0;
+    } 
+    .introduction{
+        padding: 60px 0; 
+
+        .introduction-big-title{
+            font-size: 3.5rem;
+            letter-spacing: 5px;
+            font-weight: bold;
+
+            @include lg {
+                font-size: 1.5rem;
+            }
+        }                
+    }
+    .introduction-forms{
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px 2px #f1f1f1;
+        margin-bottom: 80px;
+
+        @include lg {
+            padding: 20px;
+        }
+
+        form{
+            margin-bottom: 20px;
+
+            label{
+                font-size: 20px;
+              font-weight: bold;
+              letter-spacing: 2px;
+            }
+
+            input{
+                padding: 12px;
+                border-radius: 0;
+                border-color: #637381;
+                margin-top: 1px;
+            }
+            button{
+                margin-bottom: 0;
+                background: #637381;
+                border-color: #637381;
+                border-radius: 0;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 12px;
+            }
+
+        }
+        .col-lg-8{
+            padding: 0;
+        }
+        .col-lg-4{
+            padding-left: 0;
+        }
+    }
+
+    
+}
+.video-bg{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    @include lg {
+        padding: 20px;
+    }
+    .introduction{
+        padding: 60px 0; 
+
+        .introduction-big-title{
+            font-size: 3.5rem;
+            letter-spacing: 5px;
+            font-weight: bold;
+
+            @include lg {
+                font-size: 1.5rem;
+            }
+        }                
+    }
+    .introduction-forms{
+        background: $white;  
+        form{
+            margin-bottom: 20px;
+
+            label{
+                font-size: 20px;
+              font-weight: bold;
+              letter-spacing: 2px;
+            }
+
+            input{
+                padding: 12px;
+                border-radius: 0;
+                border-color: #637381;
+                margin-top: 1px;
+            }
+            button{
+                margin-bottom: 0;
+                background: #637381;
+                border-color: #637381;
+                border-radius: 0;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 12px;
+            }
+
+        }
+        .col-lg-8{
+            padding: 0;
+        }
+        .col-lg-4{
+            padding-left: 0;
+        }
+    }
+    .introduction-big-title, .lila-title{
+        color: $white;
+    }
+    video{
+        position: absolute;
+        top: 0;
+        z-index: -2;
+        width: 100%;
+    }
+}
+.mixed-bg{
+    background: url(/wp-content/uploads/2018/10/white-purple.jpg);
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    .boxed-text{
+        background: $white;
+        border: 1px solid;
+        padding: 50px;
+    }
+
+    .boxed-text h3{
+        margin-bottom: 20px;
+    letter-spacing: 2px;
+    }
+
+    .boxed-text p{
+        text-align: center !important;
+    color: #666666;
+    }
+
+    @include lg {
+        .bg-fio-image {
+            height: 300px;
+        }
+    }
+}
+
+.members-section{
+    padding: 60px 0;
+    padding-top: 90px;
+
+    .member-grid{
+        box-shadow: 2px 2px 10px 2px #f1f1f1;
+        padding: 40px;
+        border-radius: 30px;
+
+        h3{
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .member-box{
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            @include lg { 
+                flex-basis: auto;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            img{
+                margin-bottom: 10px;
+            }
+
+            span{
+                color: #b3b3b3;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+  
+.protocol-section{
+    padding: 30px 0;       
+}
+
+.ribon-left-white-bg{
+    padding: 60px;
+    
+
+    h3{
+        color: $purple;
+        letter-spacing: 2px;
+        font-size: 1.9rem;
+        margin-bottom: 10px;
+    }
+    p{
+        color: #b3b3b3;
+    }
+
+    .black-decorator{
+        width: 50px;
+        height: 2px;
+        background: #000;
+        margin-bottom: 30px;
+    }
+    .white-decorator{
+        width: 50px;
+        height: 2px;
+        background: $white;
+        margin-bottom: 30px;
+    }
+}
+
+.ribon-right-gray-bg {
+    padding: 60px;
+    background: #b3b3b3;
+
+    @include lg {
+        order: 2;
+    }
+
+    
+
+    h3 {
+        color: $white;
+        letter-spacing: 2px;
+        font-size: 1.9rem;
+        margin-bottom: 10px;
+    }
+    p {
+        color: $white;
+    }
+}
