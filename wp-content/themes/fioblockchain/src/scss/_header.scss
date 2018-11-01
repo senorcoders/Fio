@@ -29,11 +29,12 @@
         width: auto;
         text-align: right;
         background: $purple;
-        max-width: 350px;
+        max-width: 550px;
         float: right;
         padding: 10px 20px;
         color: $white;
         margin-bottom: 0;
+    
 
         @include lg {
             text-align: center;
@@ -53,7 +54,12 @@
            color: $white;
            vertical-align: text-top;
         }
-
+      .underline {
+          @include lg {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+      }
         .underline a{
             line-height: 30px;
             vertical-align: baseline;
@@ -63,6 +69,8 @@
             font-size: 17px;
             letter-spacing: 1px;
             border: none;
+             
+        
         }
     }
 }
